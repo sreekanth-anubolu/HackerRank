@@ -1,6 +1,6 @@
 # HackerRank With Python
 
-This is fun repository, I am here trying to solve all the Hackerrank problems using Python.
+This Repository is my work on trying to solve all the HackerRank problems using Python.
 
 Also solving some other programming problems for Fun.
 
