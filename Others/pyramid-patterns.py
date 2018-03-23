@@ -52,10 +52,7 @@ Output
 """
 index = 1
 for i in range(5, 0, -1):
-    for j in range(i-1):
-        print("  ", end="")
-
-    print("* " * index)
+    print("  " * (i-1) + "* " * index)
     index += 1
 
 print()
@@ -71,16 +68,14 @@ Output
         * 
 """
 
-index = 0
-for i in range(5, 0, -1):
-    if index > 0:
-        print("  " * index, end="")
-    print("* " * i)
-    index += 1
+start = 5
+for i in range(start, 0, -1):
+    print("  " * (start - i) + "* " * i)
 
 print()
 print("======================")
 print()
+
 
 """
 Output
@@ -123,6 +118,26 @@ for i in range(_range, 0, -1):
 print()
 print("======================")
 print()
+
+
+"""
+Output:
+* * * * * 
+  * * * * * 
+    * * * * * 
+      * * * * * 
+        * * * * * 
+"""
+
+start = 5
+for i in range(start, 0, -1):
+    print("  " * (start - i) + "* " * start)
+
+
+print()
+print("======================")
+print()
+
 
 """
 Output
